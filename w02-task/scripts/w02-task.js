@@ -7,7 +7,8 @@ let fullName = 'Marcelo dos Santos Carmo';
 
 const currentYear = new Date.parse();
 
-console.log = (currentYear);
+const profilePicture = document.getElementById("Macelo.png");
+
 /* Step 3 - Element Variables */
 
 
