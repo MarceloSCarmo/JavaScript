@@ -3,29 +3,36 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-let fullName = 'Marcelo dos Santos Carmo';
+const fullName = 'Marcelo dos Santos Carmo';
 
-const currentYear = new Date.parse();
+const date = new Date;
+const currentYear = date.getFullYear();
 
-const profilePicture = document.getElementById("Macelo.png");
+const profilePicture = 'images/Marcelo.png'; 
 
 /* Step 3 - Element Variables */
 
-
-
-
+const nameElement = document.getElementById('name');
+const foodElement = document.getElementById("food");
+const yearElement = document.querySelector('#year')
+const imageElement = document.querySelector('#Profile');
 
 /* Step 4 - Adding Content */
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
+yearElement.textContent = `${currentYear}`;
 
-
-
-
+imageElement.setAttribute('src', profilePicture);
+imageElement.setAttribute('alt',`Profile image of ${profilePicture}`);
 
 /* Step 5 - Array */
-
-
-
-
+let favoriteFood = ["pizza","sushi","barbecue","ice cream"];
+const item = "Banana";
+favoriteFood.push(item);
+foodElement.innerHTML +=`<br>${item}`;
+item.shift();
+foodElement.innerHTML += `<br>${item}`;
+item.pop();
+foodElement.innerHTML += `<br>${item}`;
 
 
