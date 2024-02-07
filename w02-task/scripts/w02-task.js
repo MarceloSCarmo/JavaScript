@@ -24,13 +24,16 @@ yearElement.textContent = `${currentYear}`;
 
 /* Step 5 - Array */
 const favoriteFood = ["pizza","sushi","barbecue","ice cream"];
+
+foodElement.innerHTML =`<strong>${favoriteFood}</strong>`;
+
 const item = "Banana";
 favoriteFood.push(item);
-foodElement.innerHTML +=`<strong><br>${favoriteFood}</strong>`;
+foodElement.innerHTML +=`<br>${favoriteFood}`;
 favoriteFood.shift(item);
-foodElement.innerHTML += `<strong><br>${favoriteFood}</strong>`;
+foodElement.innerHTML += `<br>${favoriteFood}`;
 favoriteFood.pop(item);
-foodElement.innerHTML += `<strong><br>${favoriteFood}</strong>`;
+foodElement.innerHTML += `<br>${favoriteFood}`;
 
 
 imageElement.setAttribute("src", profilePicture);
